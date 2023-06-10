@@ -44,13 +44,19 @@ alert(num);
 let age = prompt("Сколько вам лет?");
 alert(age);
 
-// 9.0 //
+// 9 //
 
 const user = {
     name: 'Stas',
     age: 28,
     isAdmin: true,
 }
+user.cityOfResidence = 'Nizhny Novgorod';
+user.age = 29;
+delete user.cityOfResidence;
+
+let info = prompt("Какую информацию хотите узнать о пользователе?");
+alert(user[info]);
 
 // 10 //
 let name = prompt('Как вас зовут?');

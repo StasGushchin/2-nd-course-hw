@@ -26,7 +26,7 @@ body {
     }
 
     &__title {
-        width: 750px;
+        max-width: 750px;
         font-weight: 700;
         font-size: 64px;
         line-height: 78px;
@@ -35,7 +35,7 @@ body {
     }
 
     &__text{
-        width: 481px;
+        max-width: 481px;
         font-weight: 300;
         font-size: 18px;
         line-height: 32px;
@@ -70,6 +70,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
 
     &__link {
@@ -97,3 +98,5 @@ body {
         }
     }
 }
+
+@import 'mobile';

@@ -1,0 +1,55 @@
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .heading {
+        text-align: center;
+        background-image: url(img/background_mobile.jpg);
+        background-size: cover;
+
+        &__top {
+            padding-top: 239px;
+            padding-left: 16px;
+            padding-right: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        } 
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media (min-width: 779px) and (max-width: 1237px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+ 
+
+@media (max-width: 411px) {
+    .games {
+
+        &__link {
+            
+            img {
+                
+                width: 100%;
+            }
+        }
+    }
+}

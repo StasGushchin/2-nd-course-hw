@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,13 +20,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border-style: cover;
+  background-size: cover;
 }
 .heading__top {
   padding-top: 217px;
   padding-left: 120px;
 }
 .heading__title {
-  width: 750px;
+  max-width: 750px;
   font-weight: 700;
   font-size: 64px;
   line-height: 78px;
@@ -33,7 +35,7 @@ body {
   margin-bottom: 32px;
 }
 .heading__text {
-  width: 481px;
+  max-width: 481px;
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
@@ -57,23 +59,26 @@ body {
 }
 
 .games {
-  height: 556px;
+  min-width: 343px;
+  min-height: 556px;
   background-image: url(img/background_2.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-style: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 32px;
 }
 .games__link {
+  display: block;
   position: relative;
-  width: 379px;
-  height: 300px;
+  border: 3px solid transparent;
 }
 .games__link:hover {
-  border: 3px solid #44D2FF;
+  border: solid #44D2FF;
   border-radius: 16px;
 }
 .games__link p {
@@ -85,6 +90,44 @@ body {
   left: 32px;
   bottom: 32px;
 }
-.games__link img {
-  width: 100%;
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .heading {
+    text-align: center;
+    background-image: url(img/background_mobile.jpg);
+    background-size: cover;
+  }
+  .heading__top {
+    padding-top: 239px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .heading__text {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 779px) and (max-width: 1237px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 411px) {
+  .games__link img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

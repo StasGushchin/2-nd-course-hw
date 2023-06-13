@@ -96,7 +96,7 @@ body {
   border-radius: 16px;
 }
 
-.seasons {
+.game-content {
   min-height: 800px;
   background-image: url(img/background_2.jpg);
   background-repeat: no-repeat;
@@ -108,15 +108,15 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.seasons__title {
-  max-width: 377px;
+.game-content__title {
+  max-width: 396px;
   font-weight: 700;
   font-size: 48px;
   line-height: 59px;
   color: #FFFFFF;
   margin-bottom: 32px;
 }
-.seasons__text {
+.game-content__text {
   max-width: 584px;
   font-weight: 300;
   font-size: 18px;
@@ -124,7 +124,7 @@ body {
   color: #FFFFFF;
   margin-bottom: 32px;
 }
-.seasons__button {
+.game-content__button {
   font-family: "Montserrat", sans-serif;
   background: #9C0332;
   border-radius: 30px;
@@ -135,7 +135,7 @@ body {
   width: 234px;
   height: 48px;
 }
-.seasons__button:hover {
+.game-content__button:hover {
   background: #EB443F;
   transition: 1s;
 }
@@ -173,19 +173,19 @@ body {
     padding-top: 128px;
     padding-bottom: 128px;
   }
-  .seasons {
+  .game-content {
     padding-top: 51px;
     text-align: center;
   }
-  .seasons__title {
+  .game-content__title {
     font-size: 32px;
     line-height: 39px;
   }
-  .seasons__text {
+  .game-content__text {
     font-size: 14px;
     line-height: 22px;
   }
-  .seasons__pic {
+  .game-content__pic {
     max-width: 344px;
     max-height: 236px;
   }

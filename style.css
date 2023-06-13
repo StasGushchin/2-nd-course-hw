@@ -94,6 +94,7 @@ body {
 .games__link img:hover {
   border: solid #44D2FF;
   border-radius: 16px;
+  transition: 0.1s;
 }
 
 .game-content {

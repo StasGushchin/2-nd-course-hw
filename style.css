@@ -78,10 +78,6 @@ body {
   position: relative;
   border: 3px solid transparent;
 }
-.games__link:hover {
-  border: solid #44D2FF;
-  border-radius: 16px;
-}
 .games__link p {
   font-weight: 600;
   font-size: 24px;
@@ -90,6 +86,14 @@ body {
   position: absolute;
   left: 32px;
   bottom: 32px;
+}
+.games__link img {
+  max-width: 378px;
+  max-height: 300px;
+}
+.games__link img:hover {
+  border: solid #44D2FF;
+  border-radius: 16px;
 }
 
 .seasons {

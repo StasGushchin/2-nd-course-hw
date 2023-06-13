@@ -83,11 +83,6 @@ body {
         position: relative;
         border: 3px solid transparent;
         
-        &:hover {
-            border: solid #44D2FF;
-            border-radius: 16px;
-        } 
-
         p {
             font-weight: 600;
             font-size: 24px;
@@ -96,6 +91,16 @@ body {
             position: absolute;
             left: 32px;
             bottom: 32px;
+        }
+
+        img {
+            max-width: 378px;
+            max-height: 300px;
+
+            &:hover {
+                border: solid #44D2FF;
+                border-radius: 16px;
+            } 
         }
     }
 }

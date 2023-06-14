@@ -5,12 +5,12 @@ let a = 20;
 alert(a);
 
 // 2 //
-let iphone = "Год выпуска первого iPhone - 2007";
+let iphone = "2007";
 alert(iphone);
 
 // 3 //
 
-let founderJs = "Создатель языка JavaScript - Бренданом Айком";
+let founderJs = "Бренданом Айком";
 alert(founderJs);
 
 // 4 //

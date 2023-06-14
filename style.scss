@@ -10,12 +10,12 @@ body {
 }
 
 .center {
-    padding-left: calc(50% - 720px);
-    padding-right: calc(50% - 720px);
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 .heading {
-    height: 1024px;
+    min-height: 1024px;
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -23,8 +23,7 @@ body {
     background-size: cover;
 
     &__top {
-        padding-top: 217px;
-        padding-left: 120px; 
+        padding-top: 217px; 
     }
 
     &__title {
@@ -78,15 +77,12 @@ body {
     gap: 32px;
 
     &__link {
+        max-width: 378px;
+        max-height: 100%;
         display: block;
         position: relative;
         border: 3px solid transparent;
         
-        &:hover {
-            border: solid #44D2FF;
-            border-radius: 16px;
-        } 
-
         p {
             font-weight: 600;
             font-size: 24px;
@@ -96,7 +92,67 @@ body {
             left: 32px;
             bottom: 32px;
         }
+
+        img {
+            max-width: 378px;
+            max-height: 300px;
+
+            &:hover {
+                border: solid #44D2FF;
+                border-radius: 16px;
+                transition: 0.1s;
+            } 
+        }
     }
 }
 
+.game-content {
+    min-height: 800px;
+    background-image: url(img/background_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-style: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+        &__title {
+            max-width: 396px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            color: #FFFFFF;
+            margin-bottom: 32px;
+            }
+
+        &__text{
+            max-width: 584px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            color: #FFFFFF;
+            margin-bottom: 32px;
+            }
+
+        &__button {
+            font-family: "Montserrat", sans-serif;
+            background: #9C0332;
+            border-radius: 30px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            width: 234px;
+            height: 48px;
+
+            &:hover {
+                background: #EB443F;
+                transition: 1s;
+                }
+        }
+    }
+   
 @import 'mobile';

@@ -109,5 +109,6 @@ let clientDeviceYear = Number(prompt ('Введите год выпуска ва
     } else {
         alert ('Неверные данные');
     }
-    
+
+    // done //
 

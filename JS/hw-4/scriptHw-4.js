@@ -31,8 +31,13 @@ for (let names in guys) {
 
 // 5 //
 let n = 1000;
+let num = 1;
 while ((n / 2) >= 50) {
     console.log(n / 2);
     n = n / 2
+    console.log(num);
+    num++;
 }
+
+
 

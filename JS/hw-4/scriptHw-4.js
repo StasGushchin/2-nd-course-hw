@@ -30,9 +30,9 @@ for (let names in guys) {
 }
 
 // 5 //
-const n = 1000;
+let n = 1000;
 while ((n / 2) >= 50) {
     console.log(n / 2);
-
+    n = n / 2
 }
 

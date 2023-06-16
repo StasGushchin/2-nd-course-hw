@@ -26,7 +26,7 @@ const guys = {
     'Петя': 400,
 };
 for (let names in guys) {
-    alert(`${names} - зарплата ${guys[names]} долларов`);
+    console.log(`${names} - зарплата ${guys[names]} долларов`);
 }
 
 // 5 //
@@ -39,5 +39,11 @@ while ((n / 2) >= 50) {
     num++;
 }
 
+// 6 //
+let friday = 5;
+for (let i = 1; friday < 31; i++) {
+    console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
+    friday +=7;
+}
 
 

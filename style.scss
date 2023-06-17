@@ -54,6 +54,7 @@ body {
         color: #FFFFFF;
         width: 234px;
         height: 48px;
+        animation: button 2s ease 0s infinite normal forwards;
 
         &:hover {
             background: #EB443F;
@@ -117,7 +118,11 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
+            
+        &_reverse {
+            display: flex;
+            flex-direction: row-reverse;
+        }
 
         &__title {
             max-width: 396px;
@@ -147,6 +152,7 @@ body {
             color: #FFFFFF;
             width: 234px;
             height: 48px;
+            animation: button 2s ease 0s infinite normal forwards;
             
             &:hover {
                 background: #EB443F;
@@ -197,6 +203,7 @@ body {
             color: #FFFFFF;
             width: 234px;
             height: 48px;
+            animation: button 2s ease 0s infinite normal forwards;
 
             &:hover {
                 background: #EB443F;
@@ -224,5 +231,5 @@ body {
         }
 }
 
-
+@import 'animation';
 @import 'mobile';

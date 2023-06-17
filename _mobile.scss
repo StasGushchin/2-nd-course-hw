@@ -57,6 +57,35 @@
             max-height: 236px;
         }
     }
+
+    .riddles {
+        text-align: center;
+        background-image: url(img/background_mobile_2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-style: cover;
+        background-size: cover;
+        padding-top: 51px;
+        text-align: center;
+
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &__pic {
+            max-width: 344px;
+            max-height: 236px;
+        }
+    }
+
+
 }
 
 @media (min-width: 768px) and (max-width: 819px) {

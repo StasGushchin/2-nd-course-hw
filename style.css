@@ -56,6 +56,7 @@ body {
 .heading__button:hover {
   background: #EB443F;
   transition: 1s;
+  cursor: pointer;
 }
 
 .games {
@@ -96,6 +97,7 @@ body {
   border: solid #44D2FF;
   border-radius: 16px;
   transition: 0.1s;
+  cursor: pointer;
 }
 
 .game-content {
@@ -145,6 +147,7 @@ body {
 .game-content__button:hover {
   background: #EB443F;
   transition: 1s;
+  cursor: pointer;
 }
 
 .riddles {
@@ -191,6 +194,7 @@ body {
 .riddles__button:hover {
   background: #EB443F;
   transition: 1s;
+  cursor: pointer;
 }
 
 .footer {

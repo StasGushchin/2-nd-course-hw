@@ -59,6 +59,7 @@ body {
         &:hover {
             background: #EB443F;
             transition: 1s;
+            cursor: pointer;
         }
     }
 }    
@@ -102,6 +103,7 @@ body {
                 border: solid #44D2FF;
                 border-radius: 16px;
                 transition: 0.1s;
+                cursor: pointer;
             } 
         }
     }
@@ -157,6 +159,7 @@ body {
             &:hover {
                 background: #EB443F;
                 transition: 1s;
+                cursor: pointer;
                 }
         }
     }
@@ -208,6 +211,7 @@ body {
             &:hover {
                 background: #EB443F;
                 transition: 1s;
+                cursor: pointer;
                 }
         }
     }

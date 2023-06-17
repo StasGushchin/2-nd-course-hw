@@ -51,7 +51,6 @@ body {
   color: #FFFFFF;
   width: 234px;
   height: 48px;
-  animation: button 2s ease 0s infinite normal forwards;
 }
 .heading__button:hover {
   background: #EB443F;
@@ -136,7 +135,6 @@ body {
   color: #FFFFFF;
   width: 234px;
   height: 48px;
-  animation: button 2s ease 0s infinite normal forwards;
 }
 .game-content__button:hover {
   background: #EB443F;
@@ -182,7 +180,6 @@ body {
   color: #FFFFFF;
   width: 234px;
   height: 48px;
-  animation: button 2s ease 0s infinite normal forwards;
 }
 .riddles__button:hover {
   background: #EB443F;
@@ -294,28 +291,5 @@ body {
 @media (max-width: 411px) {
   .games__link img {
     width: 100%;
-  }
-}
-@keyframes button {
-  0% {
-    animation-timing-function: ease-out;
-    transform: scale(1);
-    transform-origin: center center;
-  }
-  10% {
-    animation-timing-function: ease-in;
-    transform: scale(0.91);
-  }
-  17% {
-    animation-timing-function: ease-out;
-    transform: scale(0.98);
-  }
-  33% {
-    animation-timing-function: ease-in;
-    transform: scale(0.87);
-  }
-  45% {
-    animation-timing-function: ease-out;
-    transform: scale(1);
   }
 }/*# sourceMappingURL=style.css.map */

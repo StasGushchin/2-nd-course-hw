@@ -54,7 +54,6 @@ body {
         color: #FFFFFF;
         width: 234px;
         height: 48px;
-        animation: button 2s ease 0s infinite normal forwards;
 
         &:hover {
             background: #EB443F;
@@ -148,8 +147,7 @@ body {
             color: #FFFFFF;
             width: 234px;
             height: 48px;
-            animation: button 2s ease 0s infinite normal forwards;
-
+            
             &:hover {
                 background: #EB443F;
                 transition: 1s;
@@ -199,7 +197,6 @@ body {
             color: #FFFFFF;
             width: 234px;
             height: 48px;
-            animation: button 2s ease 0s infinite normal forwards;
 
             &:hover {
                 background: #EB443F;
@@ -229,4 +226,3 @@ body {
 
 
 @import 'mobile';
-@import 'animation';

@@ -42,20 +42,42 @@ console.log(number1(6));
 function age () {
     let answer = prompt ('Сколько вам лет?');
 
-    if (answer < 0) {
-        alert('Вы ввели неправильное значение');
-    } 
+    if (isNaN(answer) === false) {
+        
+        if (answer < 0) {
+            alert('Вы ввели неправильное значение');
+        } 
+        
+        else if (answer > 0 && answer <= 12) {
+            alert ('Привет, друг!');
+        }
     
-    else if (answer > 0 && answer <= 12) {
-        alert ('Привет, друг!');
-    }
+        else {
+            alert ('Добро пожаловать!');
+        }
 
-    else {
-        alert ('Добро пожаловать!');
+    } else {
+        alert('Вы ввели неправильное значение');
     }
 }
 
 age ();
+
+// 5 //
+let numbs = function (num1, num2) {
+    if (isNaN(num1 && num2) === false) {
+        return num1 * num2;
+    } else {
+        return ('Одно или оба значения не являются числом');
+    }
+}
+
+console.log(numbs("f","a"));
+console.log(numbs(2,5));
+console.log(numbs(5,"a"));
+
+
+
 
 
 

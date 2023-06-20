@@ -38,6 +38,27 @@ console.log(number1(4));
 console.log(number1(5));
 console.log(number1(6));
 
+// 4 //
+function age () {
+    let answer = prompt ('Сколько вам лет?');
+
+    if (answer < 0) {
+        alert('Вы ввели неправильное значение');
+    } 
+    
+    else if (answer > 0 && answer <= 12) {
+        alert ('Привет, друг!');
+    }
+
+    else {
+        alert ('Добро пожаловать!');
+    }
+}
+
+age ();
+
+
+
 
 
 

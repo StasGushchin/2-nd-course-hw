@@ -98,6 +98,69 @@ console.log(cube(8));
 console.log(cube(9));
 console.log(cube(10));
 
+// 7 //
+const circle1 = {
+	radius: 4,
+    getArea() {
+        return Math.PI * this.radius**2;
+    },
+
+    getPerimeter() {
+        return 2 * Math.PI * this.radius**2;
+    }
+};
+
+const circle2 = {
+	radius: 5,
+    getArea() {
+        return Math.PI * this.radius**2;
+    },
+
+    getPerimeter() {
+        return 2 * Math.PI * this.radius**2;
+    }
+};
+
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
+
+// 8 //
+function seasons () {
+    let answer = prompt ('Введите номер месяца');
+
+    if (isNaN(answer) === false) {
+        
+        if (answer === 12||1||2) {
+            alert('Зима');
+        } 
+        
+        else if (answer === 3||4||5) {
+            alert ('Весна');
+        }
+
+        else if (answer === 6||7||8) {
+            alert ('Лето');
+        }
+
+        else if (answer === 9||10||11) {
+            alert ('Осень');
+        }
+    
+        else {
+            alert ('Вы ввели неправильное значение');
+        }
+
+    } else {
+        alert('Вы ввели неправильное значение');
+    }
+}
+
+seasons ();
+
+
+
 
 
 

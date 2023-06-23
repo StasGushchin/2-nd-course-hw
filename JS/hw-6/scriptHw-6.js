@@ -16,8 +16,8 @@ num.forEach((el, index) => {
 
 
 let numbs = [1, 5, 4, 10, 0, 3];
-let a = numbs.indexOf(4);
-console.log(a);
+let b = numbs.indexOf(4);
+console.log(b);
 
 // 3 //
 let number = [1, 3, 5, 10, 20];
@@ -46,6 +46,16 @@ let m = [9, 8, 7, 'a', 6, 5];
 m = m.sort();
 m.pop();
 console.log(m);
+
+// 7 //
+let r = [9, 8, 7, 6, 5];
+let a = +prompt('Угадай число')
+    if (r.includes(a)) {
+        alert('Угадал');
+    } else {
+        alert('Не угадал');
+    }
+
 
 
 

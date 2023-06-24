@@ -3,18 +3,18 @@ let numbers = [1, 5, 4, 10, 0, 3];
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] === 10) break;
         console.log(numbers[i]);
-        
     }
 
 // 2 //
+
+// forEach //
 let num = [1, 5, 4, 10, 0, 3];
 num.forEach((el, index) => {
     if (el === 4)
 	console.log(`${index}`);
 });
 
-
-
+// indexOf //
 let numbs = [1, 5, 4, 10, 0, 3];
 let b = numbs.indexOf(4);
 console.log(b);
@@ -67,19 +67,17 @@ let arrArr = [[1, 2, 3,],[4, 5, 6]];
 let result = [].concat(...arrArr);
     console.log(result);
 
-// 10 доделать//
-// let randomArr = [1, 2, 3, 4, 5];
-//     for (let i = 0; i < randomArr.length; i++) {
-//         for (let i = 0; i < randomArr.length; i++) {
-//         let result = i + (i + 1);
-//     console.log(result);
-//     }
-// }
+// 10 //
+let randomArr = [1, 2, 3, 4, 5];
+    for (let i = 0; i < randomArr.length - 1; i++) {
+        let result = randomArr[i] + randomArr[i + 1];
+        console.log(result);
+}
 
 // 11 //
 let numbsArr = [1, 2, 3, 4, 5];
     let square = numbsArr.map(function(numbsArr) {
-        return numbsArr**2
+        return numbsArr**2;
     })
     console.log(square);
 

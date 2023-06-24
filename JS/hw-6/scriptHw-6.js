@@ -68,13 +68,13 @@ let result = [].concat(...arrArr);
     console.log(result);
 
 // 10 доделать//
-let randomArr = [1, 2, 3, 4, 5];
-    for (let i = 0; i < randomArr.length; i++) {
-        for (let i = 0; i < randomArr.length; i++) {
-        let result = i + (i + 1);
-    console.log(result);
-    }
-}
+// let randomArr = [1, 2, 3, 4, 5];
+//     for (let i = 0; i < randomArr.length; i++) {
+//         for (let i = 0; i < randomArr.length; i++) {
+//         let result = i + (i + 1);
+//     console.log(result);
+//     }
+// }
 
 // 11 //
 let numbsArr = [1, 2, 3, 4, 5];
@@ -84,7 +84,23 @@ let numbsArr = [1, 2, 3, 4, 5];
     console.log(square);
 
 // 12 //
-let words = [1, 2, 3, 4, 5];
+function LengthWords(array) {
+    return array.map(array => `${array.length}`)
+}
+const getLengthWords = ['привет', '', 'как', 'дела'];
+console.log(LengthWords(getLengthWords));
+
+// 13 //
+function filterPositive(array) {
+    return array.filter(function (n) {
+        return n < 0;
+    });
+}
+const arr1 = [-1, 0, 5, -10, 56];
+const arr2 = [-25, 25, 0, -1000, -2];
+console.log(filterPositive(arr1));
+console.log(filterPositive(arr2));
+    
     
     
 

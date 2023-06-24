@@ -24,13 +24,12 @@ let number = [1, 3, 5, 10, 20];
 number = number.join(' ');
 console.log(number);
 
-// 4 доделать//
+// 4 //
 let arr = [];
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i <= 2; i++) {
     arr[i] = [];
-
         for (let j = 0; j < 3; j++) {
-        arr[i].push[j];
+        arr[i].push(1);
         }
     }
 console.log(arr);
@@ -49,13 +48,45 @@ console.log(m);
 
 // 7 //
 let r = [9, 8, 7, 6, 5];
-let a = +prompt('Угадай число')
+let a = +prompt('Угадай число');
     if (r.includes(a)) {
         alert('Угадал');
     } else {
         alert('Не угадал');
     }
 
+// 8 //
+let string = 'abcdef';
+string = string.split('');
+let rev = string.reverse();
+rev = rev.join('');
+console.log(rev);
+
+// 9 //
+let arrArr = [[1, 2, 3,],[4, 5, 6]];
+let result = [].concat(...arrArr);
+    console.log(result);
+
+// 10 доделать//
+let randomArr = [1, 2, 3, 4, 5];
+    for (let i = 0; i < randomArr.length; i++) {
+        for (let i = 0; i < randomArr.length; i++) {
+        let result = i + (i + 1);
+    console.log(result);
+    }
+}
+
+// 11 //
+let numbsArr = [1, 2, 3, 4, 5];
+    let square = numbsArr.map(function(numbsArr) {
+        return numbsArr**2
+    })
+    console.log(square);
+
+// 12 //
+let words = [1, 2, 3, 4, 5];
+    
+    
 
 
 

@@ -37,3 +37,5 @@ console.log(random(1, 10));
 // 8 //
 let today = new Date();
 console.log(today);
+
+// 9 //

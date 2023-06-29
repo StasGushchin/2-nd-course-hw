@@ -67,9 +67,32 @@ console.log(today);
 let currentDate = new Date();
 let days73 = currentDate.setDate(currentDate.getDate() + 73);
 let searchDate = currentDate + days73;
-let daysLater73 = new Date(searchDate)
+let daysLater73 = new Date(searchDate);
 console.log(daysLater73);
 
 // 10 //
+const dateTime = function () {
 
+    const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+    let myDate = new Date();
+    let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + ", " + days[myDate.getDay()];
+
+    let hour = myDate.getHours();
+    let minute = myDate.getMinutes();
+    let second = myDate.getSeconds();
+    if (minute < 10) {
+        minute = "0" + minute;
+    }
+    if (second < 10) {
+        second = "0" + second;
+    }
+    let fullTime = "Время: " + hour + ":" + minute + ":" + second;
+
+    let dateTime = `${fullDate} ${fullTime}`;
+
+    console.log(dateTime);
+}
+dateTime ();
 // 11 //

@@ -95,4 +95,21 @@ const dateTime = function () {
     console.log(dateTime);
 }
 dateTime ();
-// 11 //
+// 11 доделать//
+// let words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+// words = words.sort(() => Math.random() - 0.5);
+
+// alert(`Запомните слова: ${words}`);
+// let answerUser1 = String(prompt('Введите первое слово'));
+// let answerUser2 = String(prompt('Введите последнее слово'));
+// let answer1 = words[0];
+// let answer2 = words[6];
+//     if (answerUser1.toLowerCase === answer1.toLowerCase && answerUser2.toLowerCase === answer2.toLowerCase) {
+//         alert('Вы угадали оба слова!');
+//     } else if (answerUser1.toLowerCase === answer1.toLowerCase || answerUser2.toLowerCase === answer2.toLowerCase) {
+//         alert('Вы были близки к победе!');
+//     } else {
+//         alert('Вы ответили неверно!');
+//     }
+
+

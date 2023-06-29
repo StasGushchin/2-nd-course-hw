@@ -4,15 +4,19 @@ js = js.toUpperCase();
 console.log(js);
 
 // 2 доделать//
-// function searchStart (arr, string) {
-//     arr.forEach((elem) => {
-//         if (elem.toLowerCase().startsWith(string.toLowerCase())) {
-//             return (elem);
-//         }
-        
-//     });
-// };
-// console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
+function searchStart (arr, string) {
+    let arrArr = [];
+    let lowerCaseArr = arr.map((el) => el.toLowerCase());
+    lowerCaseArr.forEach((element) => {
+      if (element.startsWith(string)) {
+        arrArr.push(element);
+      }
+    });
+    console.log(arrArr);
+}
+searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
+searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру');
+searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино');
 
 // 3 //
 const num = 32.58884;
@@ -39,14 +43,18 @@ function random(min, max) {
 }
 console.log(random(1, 10));
 
-// 6 доделать//
-// function randomNum(num) {
-//     let array = [];
-//     array.length = Math.floor(num / 2);
-//     return array.from(() => Math.round(Math.random() * num)
-//       );
-// }
-// console.log(randomNum(6));
+// 6 //
+function randomNum(num) {
+    let array = [];
+    for (let i = 0; i < Math.floor(num / 2); i++) {
+    array.push(Math.round(Math.random() * num));
+    }
+    console.log(array);
+}
+randomNum(6);
+randomNum(9);
+randomNum(12);
+
 
 // 7 //
 function randomNumbs(num1, num2) {
@@ -72,12 +80,11 @@ console.log(daysLater73);
 
 // 10 //
 const dateTime = function () {
-
     const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+    const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
 
     let myDate = new Date();
-    let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + ", " + days[myDate.getDay()];
+    let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()];
 
     let hour = myDate.getHours();
     let minute = myDate.getMinutes();
@@ -95,21 +102,28 @@ const dateTime = function () {
     console.log(dateTime);
 }
 dateTime ();
-// 11 доделать//
-// let words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-// words = words.sort(() => Math.random() - 0.5);
 
-// alert(`Запомните слова: ${words}`);
-// let answerUser1 = String(prompt('Введите первое слово'));
-// let answerUser2 = String(prompt('Введите последнее слово'));
-// let answer1 = words[0];
-// let answer2 = words[6];
-//     if (answerUser1.toLowerCase === answer1.toLowerCase && answerUser2.toLowerCase === answer2.toLowerCase) {
-//         alert('Вы угадали оба слова!');
-//     } else if (answerUser1.toLowerCase === answer1.toLowerCase || answerUser2.toLowerCase === answer2.toLowerCase) {
-//         alert('Вы были близки к победе!');
-//     } else {
-//         alert('Вы ответили неверно!');
-//     }
+// 11 //
+let words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+function rememberWords(array) {
 
+let randomWords = array.sort(() => Math.random() - 0.5);
 
+alert(`Запомните слова: ${randomWords}`);
+
+let answerUser1 = prompt('Введите первое слово');
+let answerUser2 = prompt('Введите последнее слово');
+
+for (let i = 0; i < words.length; i++)
+    if (answerUser1.toLowerCase() === randomWords[0].toLowerCase() && answerUser2.toLowerCase() === randomWords[randomWords.length - 1].toLowerCase()) {
+        alert('Вы угадали оба слова!');
+        break;
+    } else if (answerUser1.toLowerCase() === randomWords[0].toLowerCase() || answerUser2.toLowerCase() === randomWords[randomWords.length - 1].toLowerCase()) {
+        alert('Вы были близки к победе!');
+        break;
+    } else {
+        alert('Вы ответили неверно!');
+        break;
+    }
+}   
+rememberWords(words);

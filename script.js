@@ -28,3 +28,26 @@ function seasons () {
     }
 }
 
+
+let words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+function rememberWords(array) {
+
+let randomWords = array.sort(() => Math.random() - 0.5);
+
+alert(`Запомните слова: ${randomWords}`);
+
+let answerUser1 = prompt('Введите первое слово');
+let answerUser2 = prompt('Введите последнее слово');
+
+for (let i = 0; i < words.length; i++)
+    if (answerUser1.toLowerCase() === randomWords[0].toLowerCase() && answerUser2.toLowerCase() === randomWords[randomWords.length - 1].toLowerCase()) {
+        alert('Вы угадали оба слова!');
+        break;
+    } else if (answerUser1.toLowerCase() === randomWords[0].toLowerCase() || answerUser2.toLowerCase() === randomWords[randomWords.length - 1].toLowerCase()) {
+        alert('Вы были близки к победе!');
+        break;
+    } else {
+        alert('Вы ответили неверно!');
+        break;
+    }
+}   

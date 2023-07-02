@@ -7,27 +7,33 @@ const people1 = [
  ];
 console.log(people1.sort((a, b) => a.age - b.age));
 
-// 2 доделать//
-function isPositive(arr) {
-    return arr[i] >= 0;
-    }
-function isMale(gender) {
-    // писать код тут
-    let gender = people.filter(function (a) {
-        if (a.gender === 'male') {
-            return a;
-        }
-    });
-    }
-function filter(arr, ruleFunction) {
-        const output = [];
-        for (let i = 0; i < arr.length; i++) {
-            output.push(ruleFunction(arr[i]));
-        }
-        return output;
+// 2 //
+function isPositive(num) {
+    if (num > 0) {
+        return num;
+    } else {
+        return '';
     }
     
-    console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+}
+function isMale(people) {
+    if (people.gender === 'male') {
+        return people;
+    } else {
+        return '';
+    }
+}
+function filter(arr, ruleFunction) {
+    const result = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (ruleFunction(arr[i]) !== '') {
+                result.push(ruleFunction(arr[i]));
+            }
+        }
+            return result;   
+}           
+            
+    console.log(filter([3, -4, 1, 9], isPositive));
     
     const people = [
        {name: 'Глеб', gender: 'male'},
@@ -36,7 +42,7 @@ function filter(arr, ruleFunction) {
        {name: 'Оксана', gender: 'female'}
     ];
     
-    console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+    console.log(filter(people, isMale));
 
 // 3 //
 const currentDate = () => {
@@ -55,16 +61,16 @@ const currentDate = () => {
 currentDate();
 
 // 4 //
-function delayForSecond(callback) {
+function delayForSecond1(callback) {
     setTimeout(callback, 1000);
     
 }
 
-delayForSecond(function () {
+delayForSecond1(function () {
     console.log('Привет, Глеб!');
 })
 
-// 5 доделать//
+// 5 //
 function delayForSecond(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
@@ -76,4 +82,6 @@ function delayForSecond(cb) {
 function sayHi (name) {
     console.log(`Привет, ${name}!`);
 }
-setTimeout(() => delayForSecond(sayHi('Глеб')), 2000)
+delayForSecond();
+setTimeout(() => sayHi('Глеб'), 2000);
+

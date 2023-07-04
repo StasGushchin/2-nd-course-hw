@@ -3,7 +3,7 @@ let js = "js";
 js = js.toUpperCase();
 console.log(js);
 
-// 2 доделать//
+// 2 //
 function searchStart (arr, string) {
     let arrArr = [];
     let lowerCaseArr = arr.map((el) => el.toLowerCase());
